@@ -1,0 +1,94 @@
+---
+---
+
+@import "{{ site.theme }}";
+.project-name {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+
+  @include large {
+    font-size: 2rem;
+  }
+
+  @include medium {
+    font-size: 1.5rem;
+  }
+
+  @include small {
+    font-size: 1.25rem;
+  }
+}
+.project-tagline {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+
+  @include large {
+    font-size: 1.5rem;
+  }
+
+  @include medium {
+    font-size: 1.25rem;
+  }
+
+  @include small {
+    font-size: 1rem;
+  }
+}
+
+.people-card {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.name {
+  font-weight: bold;
+  color: $section-headings-color;
+
+  @include large {
+    font-size: 1.5rem;
+  }
+
+  @include medium {
+    font-size: 1.25rem;
+  }
+
+  @include small {
+    font-size: 1rem;
+  }
+}
+
+.title {
+  font-size: 1rem;
+  color: $body-text-color;
+
+  @include large {
+    font-size: 1.25rem;
+  }
+
+  @include medium {
+    font-size: 1rem;
+  }
+
+  @include small {
+    font-size: 0.75rem;
+  }
+}
+.email {
+  font-size: 1rem;
+  color: $body-link-color;
+  
+  @include large {
+    font-size: 1.25rem;
+  }
+
+  @include medium {
+    font-size: 1rem;
+  }
+
+  @include small {
+    font-size: 0.75rem;
+  }
+}

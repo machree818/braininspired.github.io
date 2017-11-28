@@ -1,4 +1,3 @@
 ---
+layout: people
 ---
-
-people
