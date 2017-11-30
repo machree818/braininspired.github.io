@@ -2,6 +2,7 @@
 ---
 
 @import "{{ site.theme }}";
+
 .project-name {
   margin: 0;
   padding: 0;
@@ -19,6 +20,7 @@
     font-size: 1.25rem;
   }
 }
+
 .project-tagline {
   margin: 0;
   padding: 0;
@@ -35,6 +37,28 @@
   @include small {
     font-size: 1rem;
   }
+}
+
+.main-content {
+  padding-top: 52px;
+  @include large {
+    max-width: 70%;
+  }
+}
+
+.mySlides {display:none}
+
+.cursor {
+  cursor:pointer;
+  text-shadow: 0px 0px 5px #000000
+}
+
+.dotnavi {
+  height:13px;
+  width:13px;
+  padding:0;
+  cursor:pointer;
+  box-shadow: 0px 0px 5px #000000
 }
 
 .w3-card-4 {
@@ -58,51 +82,20 @@
 }
 
 .name {
+  font-size: 1.5rem;
   font-weight: bold;
   color: $section-headings-color;
-
-  @include large {
-    font-size: 1.5rem;
-  }
-
-  @include medium {
-    font-size: 1.25rem;
-  }
-
-  @include small {
-    font-size: 1rem;
-  }
 }
 
 .title {
-  font-size: 1rem;
-  color: $body-text-color;
-
-  @include large {
-    font-size: 1.25rem;
-  }
-
-  @include medium {
-    font-size: 1rem;
-  }
-
-  @include small {
-    font-size: 1rem;
-  }
+  font-size: 1.25rem;
 }
+
 .email {
-  font-size: 1rem;
-  color: $body-link-color;
-  
-  @include large {
-    font-size: 1.25rem;
-  }
+  font-size: 1.25rem;
+}
 
-  @include medium {
-    font-size: 1rem;
-  }
-
-  @include small {
-    font-size: 1rem;
-  }
+.text {
+  text-align: justify;
+  font-size: 1.25rem;
 }

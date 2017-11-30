@@ -2,9 +2,10 @@
 title: Contacts
 layout: default
 ---
+<br>
 ### Email:
 
-<a href='mailto:zhuyan@ibp.ac.cn'><i class="fa fa-envelope fa-2x"></i></a>
+> <a href='mailto:zhuyan@ibp.ac.cn'><i class="fa fa-envelope fa-2x"></i></a>
 
 ### Tel:
 > +86-10-64888540

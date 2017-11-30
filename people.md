@@ -2,12 +2,13 @@
 title: People
 layout: default
 ---
+<br>
 {% for member in site.data.members %}
 <div class="w3-card-4">
     <div class="w3-row">
         <div class="w3-quarter w3-container w3-center" style="padding: 0">
             {% if member.img != null %}
-            <div class="feather"><img src="{{ member.img | prepend:'/images/' | append:'.webp' }}"/></div>
+            <div class="feather"><img src="{{ member.img | prepend:'/images/members/' | append:'.webp' }}"/></div>
             {% else %}
             <i class="fa fa-user fa-4x" aria-hidden="true" style="margin:1rem"></i>
             {% endif %}
