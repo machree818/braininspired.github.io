@@ -62,8 +62,8 @@ layout: default
 <script type="text/javascript">
     function baiduinitMap(){
         var map = new BMap.Map("map");
-        var point = new BMap.Point(116.404, 39.915);
-        map.centerAndZoom(point, 15);
+        var point = new BMap.Point(116.38332,40.009132);
+        map.centerAndZoom(point, 16);
         var marker = new BMap.Marker(point);
         var icon = marker.getIcon();
         icon.setSize(new BMap.Size(40,40));
