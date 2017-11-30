@@ -38,7 +38,7 @@ layout: default
             if (obj.status == 200) {
                 mapjs.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCgrN3EuAV5ep3qUvV0Xo2Xpjvp91elL8I&callback=initMap";
             } else {
-                mapjs.src = "http://api.map.baidu.com/api?v=2.0&ak=2DZHIaUnG4oU5oLaVqmG9A91UFcz8bGY&callback=baiduinitMap";
+                mapjs.src = "https://api.map.baidu.com/api?v=2.0&ak=2DZHIaUnG4oU5oLaVqmG9A91UFcz8bGY&callback=baiduinitMap";
             }
             document.body.appendChild(mapjs);
         }
