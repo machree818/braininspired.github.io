@@ -1,12 +1,17 @@
 ---
 ---
-<div class="w3-content w3-display-container">
+<style>
+    .main-content {
+        padding: 0;
+    }
+</style>
+<div class="w3-display-container">
     {% for file in site.static_files %}
         {% if file.path contains "/images/slides/" %}
-            <img class="mySlides w3-animate-opacity" src="{{ file.path }}" style="width:100%"/>
+            <img class="mySlides w3-animate-opacity" src="{{ file.path }}"/>
         {% endif %}
     {% endfor %}
-    <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-center w3-container w3-section w3-text-white w3-display-bottommiddle" style="width:100%">
         <div class="w3-left w3-hover-text-khaki cursor" onclick="plusDivs(-1)">&#10094;</div>
         <div class="w3-right w3-hover-text-khaki cursor" onclick="plusDivs(1)">&#10095;</div>
         {% for file in site.static_files %}
@@ -20,11 +25,11 @@
 <script>
 var slideIndex = 1;
 showDivs(1);
-var auto;
+var autoInterval,autoTimeout;
 iniautoshow();
 
 function iniautoshow() {
-    auto = setInterval(autoshow, 2000);
+    autoInterval = setInterval(autoshow, 2000);
 }
 
 function autoshow() {
@@ -37,8 +42,9 @@ function plusDivs(n) {
 
 function currentDiv(n) {
   showDivs(slideIndex = n+1);
-  clearInterval(auto);
-  setTimeout(iniautoshow, 5000);
+  clearInterval(autoInterval);
+  clearTimeout(autoTimeout);
+  autoTimeout = setTimeout(iniautoshow, 8000);
 }
 
 function showDivs(n) {
