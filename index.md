@@ -21,8 +21,8 @@
 
 <script>
     var slideIndex = 1;
-    showDivs(1);
     var autoInterval,autoTimeout;
+    showDivs(1);
     iniautoshow();
 
     function iniautoshow() {
@@ -30,11 +30,14 @@
     }
 
     function autoshow() {
-        plusDivs(1);
+        showDivs(slideIndex += 1);
     }
 
     function plusDivs(n) {
     showDivs(slideIndex += n);
+    clearInterval(autoInterval);
+    clearTimeout(autoTimeout);
+    iniautoshow();
     }
 
     function currentDiv(n) {
