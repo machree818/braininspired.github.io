@@ -6,7 +6,7 @@ title: People
     <div class="w3-row">
         <div class="imgdiv w3-col w3-container w3-center">
             {% if member.img != null %}
-            <div class="feather"><img src="{{ member.img | prepend:'/images/members/' | append:'.webp' }}"/></div>
+            <div class="feather"><img src="{{ member.img | prepend:'/images/members/' | append:'.webp' }}" alt="{{ member.name }}"></div>
             {% else %}
             <i class="fa fa-user fa-4x" aria-hidden="true" style="margin-top:2rem"></i>
             {% endif %}
@@ -21,7 +21,13 @@ title: People
                 </span>
             </strong>
             {% if member.txt != null %}
-            <p class="text">{{ member.txt }}</p>
+            <p class="text">
+                {{ member.txt |
+                replace: "drosophila","Drosophila" | 
+                replace: "Melanogaster","melanogaster" | 
+                replace: "Drosophila","<i>Drosophila</i>" | 
+                replace: "melanogaster","<i>melanogaster</i>" }}
+            </p>
             {% endif %}
         </div>
     </div>

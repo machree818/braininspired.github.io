@@ -16,15 +16,11 @@ title: Contacts
 >
 > Chaoyang District, Beijing, China (100101)
 
-<head>
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-</head>
-
-<body>
 <div id="map" style="height: 20rem; width: 100%; max-width: 40rem;"></div>
-</body>
 
-<script type="text/javascript">
+<script src="/scripts/jquery-3.2.1.min.js"></script>
+
+<script>
     $.ajax({
         dataType: 'jsonp',
         url: 'https://www.google.com/jsapi',
@@ -42,9 +38,6 @@ title: Contacts
             document.body.appendChild(mapjs);
         }
     });
-</script>
-
-<script type="text/javascript">
     function googleinitMap() {
         var uluru = {lat: 40.002939, lng: 116.376818};
         var map = new google.maps.Map(document.getElementById('map'), {
