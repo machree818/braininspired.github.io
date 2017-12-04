@@ -1,4 +1,5 @@
 ---
+title: Contacts
 description: Contacts
 ---
 ### Email:
@@ -10,6 +11,10 @@ description: Contacts
 
 ### Fax:
 > +86-10-64871293
+
+### Follow us on WeChat:
+
+> ![WeChat](/images/wechat.webp)
 
 ### Location:
 > Room 2203, NO.15, Datun Road

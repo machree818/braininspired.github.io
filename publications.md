@@ -1,9 +1,10 @@
 ---
+title: Publications
 description: Publications
 ---
 {% for paper in site.data.publications %}
 <div class="w3-card-4">
-    <div class="w3-container text">
+    <div class="w3-container pub">
         <strong>{{ forloop.index }}. </strong>
         {{ paper.Author | 
             replace: "Zhu, Yan","<strong>Zhu, Yan</strong>" }}
@@ -13,6 +14,9 @@ description: Publications
             replace: "Melanogaster","melanogaster" | 
             replace: "Drosophila","<i>Drosophila</i>" | 
             replace: "melanogaster","<i>melanogaster</i>" }}
+        {% if paper.Journal != null %}
+            <ins>{{ paper.Journal }}</ins>
+        {% endif %}
         <br>
         {% if paper.Year != null %}
             {{ paper.Year }}

@@ -1,4 +1,5 @@
 ---
+title: People
 description: People
 ---
 {% for member in site.data.members %}
@@ -12,14 +13,14 @@ description: People
             {% endif %}
         </div>
         <div class="w3-rest w3-container">
-            <b class="name">{{ member.name }}</b>
+            <strong class="name">{{ member.name }}</strong>
             <br>
-            <strong class="title">
+            <em class="title">
                 {{ member.title }}
                 <span class="email" href="{{ member.email | prepend:'mailto:' }}">
                     <i class="fa fa-envelope"></i>
                 </span>
-            </strong>
+            </em>
             {% if member.txt != null %}
             <p class="text">
                 {{ member.txt |
