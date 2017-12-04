@@ -8,12 +8,22 @@ img {
 }
 
 .project-name {
-  margin: 0;
-  padding: 0;
-  text-align: left;
-
   @include large {
     font-size: 2rem;
+  }
+
+  @include medium {
+    font-size: 1.75rem;
+  }
+
+  @include small {
+    font-size: 1.5rem;
+  }
+}
+
+.project-tagline {
+  @include large {
+    font-size: 1.75rem;
   }
 
   @include medium {
@@ -25,22 +35,10 @@ img {
   }
 }
 
-.project-tagline {
+.page-header {
   margin: 0;
   padding: 0;
   text-align: left;
-
-  @include large {
-    font-size: 1.5rem;
-  }
-
-  @include medium {
-    font-size: 1.25rem;
-  }
-
-  @include small {
-    font-size: 1rem;
-  }
 }
 
 .main-content {
@@ -60,6 +58,11 @@ img {
   @include small {
     max-width: 100%;
   }
+}
+
+#mySidebar {
+  display:none;
+  z-index:3;
 }
 
 .mySlides {display:none}
@@ -145,4 +148,12 @@ img {
   @include small{
     font-size: 1rem;
   }
+}
+
+.absbtn {
+  padding: 0;
+}
+
+.abs{
+  margin: 0;
 }

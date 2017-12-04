@@ -1,5 +1,5 @@
 ---
-title: People
+description: People
 ---
 {% for member in site.data.members %}
 <div class="w3-card-4">

@@ -1,5 +1,5 @@
 ---
-title: Contacts
+description: Contacts
 ---
 ### Email:
 
@@ -17,8 +17,6 @@ title: Contacts
 > Chaoyang District, Beijing, China (100101)
 
 <div id="map" style="height: 20rem; width: 100%; max-width: 40rem;"></div>
-
-<script src="/scripts/jquery-3.2.1.min.js"></script>
 
 <script>
     $.ajax({

@@ -3,27 +3,24 @@
   <head>
     <meta charset="UTF-8">
     {% seo %}
-    <meta name="description" content="{{ page.description | default: site.description | default: site.github.project_tagline }}">
+    <meta name="description" content="{{ page.description | default: site.description }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/scripts/jquery-3.2.1.min.js"></script>
   </head>
   <body>
-    <section class="page-header w3-top w3-card" style="padding: 0rem 0rem; text-align: left">
+    <section class="page-header w3-top w3-card">
       <div class="w3-cell-row">
-        <div class="w3-container w3-transparent w3-cell w3-cell-bottom" style="padding:0rem">
-          <button class="w3-button w3-transparent w3-xlarge" onclick="w3_open()">&#9776;</button>
+        <div class="w3-cell" style="width:52px">
+          <button class="w3-button w3-xlarge" onclick="w3_open()">&#9776;</button>
         </div>
-        <div class="w3-container w3-transparent w3-cell w3-cell-middle">
-          <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
-        </div>
-        <div class="w3-container w3-transparent w3-cell w3-cell-middle">
-          <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>            
-        </div>
+        <div class="w3-cell w3-cell-middle project-name">{{ site.title }}</div>
+        <div class="w3-cell w3-cell-middle project-tagline">{{ page.description | default: site.description }}</div>
       </div>
 
-      <div class="w3-sidebar w3-bar-block w3-light-grey w3-animate-left" style="display:none;z-index:3" id="mySidebar">
+      <div class="w3-sidebar w3-bar-block w3-light-grey w3-animate-left" id="mySidebar">
         <button class="w3-bar-item w3-button" onclick="w3_close()">Close &times;</button>
         <a href="{{ site.url }}" class="w3-bar-item w3-button">Home</a>
         <a href="{{ site.url }}/news.html" class="w3-bar-item w3-button">News</a>
@@ -35,7 +32,7 @@
         <a href="{{ site.url }}/links.html" class="w3-bar-item w3-button">Links</a>
       </div>
 
-      <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+      <div class="w3-overlay w3-animate-opacity cursor" onclick="w3_close()" id="myOverlay"></div>
     </section>
 
     <section class="main-content">
