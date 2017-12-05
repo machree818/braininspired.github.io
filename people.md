@@ -7,7 +7,7 @@ description: People
     <div class="w3-row">
         <div class="imgdiv w3-col w3-container w3-center">
             {% if member.img != null %}
-            <div class="feather"><img src="{{ member.img | prepend:'/images/members/' | append:'.webp' }}" alt="{{ member.name }}"></div>
+            <div class="feather"><img src="/images/members/{{ member.img }}.jpg" alt="{{ member.name }}"></div>
             {% else %}
             <i class="fa fa-user fa-4x" aria-hidden="true" style="margin-top:2rem"></i>
             {% endif %}

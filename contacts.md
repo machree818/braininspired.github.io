@@ -14,7 +14,7 @@ description: Contacts
 
 ### Follow us on WeChat:
 
-> ![WeChat](/images/wechat.webp)
+> ![WeChat](/images/wechat.jpg)
 
 ### Location:
 > Room 2203, NO.15, Datun Road
