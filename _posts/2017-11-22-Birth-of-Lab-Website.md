@@ -1,13 +1,8 @@
 ---
+layout: news
 author: Gao Shan
+categories: News
 ---
-# Birth of Lab Website
-> 2017-11-22
->
-> Gao Shan 
-
-***
-
 Today, we celebrate the birth of our lab website. 
 
 It is initially online, but not officially released. 
