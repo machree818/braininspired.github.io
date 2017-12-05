@@ -102,11 +102,11 @@ table {
 .imgdiv {
   padding: 0;
   @include large {
-    max-width: 15%;
+    max-width: 20%;
   }
 
   @include medium {
-    max-width: 20%;
+    max-width: 22.5%;
   }
 
   @include small {
@@ -119,13 +119,11 @@ table {
   width: 100%
 }
 
-.feather
-{
+.feather {
   position:relative;
 }
 
-.feather::before
-{
+.feather::before {
   content: "";
   position: absolute;
   width: 100%;
