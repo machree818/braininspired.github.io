@@ -73,8 +73,11 @@ table {
 }
 
 #mySidebar {
-  display:none;
-  z-index:3;
+  display: none;
+  z-index: 3;
+  @include large {
+    display: block;
+  }
 }
 
 .mySlides {
