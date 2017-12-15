@@ -19,6 +19,13 @@
     </div>
 </div>
 
+---
+
+My group is interested in understanding: 
+1. the formation of neural circuitry, by investigating the molecular mechanisms that direct the development of complex and previously inaccessible higher-order regions of the *Drosophila* visual system;
+2. the molecular and cellular basis of how neural circuits mediate complex animal behavior, by systematically mapping neural circuits underlying vision and other sensory perceptions; 
+3. how diseases and genetic mutations affect the development and function of the nervous system.
+
 <script>
     var slideIndex = 1;
     var autoInterval,autoTimeout;

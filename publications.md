@@ -45,7 +45,6 @@ description: Publications
         </p>
     </div>
 </div>
-
 {% endfor %}
 
 <script>
