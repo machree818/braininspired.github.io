@@ -1,7 +1,6 @@
 ---
 ---
 <style>.main-content {padding: 0}</style>
-
 <div class="w3-display-container">
     {% for file in site.static_files %}
         {% if file.path contains "/images/slides/" %}
@@ -18,13 +17,33 @@
         {% endfor %}
     </div>
 </div>
-
----
-
-My group is interested in understanding: 
-1. the formation of neural circuitry, by investigating the molecular mechanisms that direct the development of complex and previously inaccessible higher-order regions of the *Drosophila* visual system;
-2. the molecular and cellular basis of how neural circuits mediate complex animal behavior, by systematically mapping neural circuits underlying vision and other sensory perceptions; 
-3. how diseases and genetic mutations affect the development and function of the nervous system.
+<hr>
+<div class="w3-row">
+    <div class="w3-col m6 l7 w3-container w3-justify">
+        <p>My group is interested in mapping neural circuits mediating behaviors, particularly those related to the higher brain functions, in the fruit flies. Our topics cover behaviors of both individuals and groups, ranging from drinking, feeding, learning and memory to courtship, aggression and sociality. We routinely utilize interdisciplinary approaches including neurogenetics, optogenetics, brain imaging, electrophysiology, quantitative behavioral analysis, and machine vision. Additionally, we are interested in applying what we learned from the tiny flies to solve problems in other organisms (such as human and robots). </p>
+        <p>Although it would be a long way to go, we designed our research specifically to accelerate the accomplishments of the following goals: </p>
+        <ul>
+            <li>to eat without getting fat</li>
+            <li>to be smart without studying</li>
+            <li>to love without being hurt</li>
+            <li>to compete without being defeated</li>
+            <li>to be alone without feeling lonely</li>
+        </ul>
+    </div>
+    <div class="w3-col m6 l5 w3-container w3-justify">
+        <div class="w3-center">
+            <h1>Prof. Yan Zhu</h1>
+            <img src="images/members/zy.jpg" alt="Prof. Yan Zhu">
+        </div>
+        <hr>
+        <ul>
+            <li>PhD in Molecular Cell Biology, Washington University in St. Louis, 2003</li>
+            <li>Postdoctoral Scholar, HHMI and UCLA, 2003-2009</li>
+            <li>Principal Investigator, State Key Lab of Brain and Cognitive Science, Institute of Biophysics, Chinese Academy of Sciences, 2009-</li>
+            <li>Professor, University of Chinese Academy of Sciences, 2015-</li>
+        </ul>
+    </div>
+</div>
 
 <script>
     var slideIndex = 1;
