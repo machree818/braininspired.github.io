@@ -33,7 +33,6 @@
     <div class="w3-col m6 l5 w3-container w3-justify">
         <div class="w3-center">
             <h1>Prof. Yan Zhu</h1>
-            <img src="images/members/zy.jpg" alt="Prof. Yan Zhu">
         </div>
         <hr>
         <ul>
