@@ -7,7 +7,7 @@ description: Publications
     <div class="w3-container pub">
         <strong>{{ forloop.index }}. </strong>
         {{ paper.Author | 
-            replace: "Zhu, Yan","<strong>Zhu, Yan</strong>" }}
+            replace: "Zhu Yan","<strong>Zhu Yan</strong>" }}
         <br>
         {{ paper.Title | 
             replace: "drosophila","Drosophila" | 
